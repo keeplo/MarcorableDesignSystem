@@ -11,6 +11,8 @@
 		A933E6D12A769AA2006DAA1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933E6D02A769AA2006DAA1E /* ContentView.swift */; };
 		A933E6D32A769AA3006DAA1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A933E6D22A769AA3006DAA1E /* Assets.xcassets */; };
 		A933E6D62A769AA3006DAA1E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A933E6D52A769AA3006DAA1E /* Preview Assets.xcassets */; };
+		A9BAD8952A774845002C8A55 /* MarcorableDesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = A9BAD8942A774845002C8A55 /* MarcorableDesignSystem */; };
+		A9BAD8972A774F82002C8A55 /* PresentableExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BAD8962A774F82002C8A55 /* PresentableExampleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		A933E6D02A769AA2006DAA1E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A933E6D22A769AA3006DAA1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A933E6D52A769AA3006DAA1E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A933E6DD2A769AEB006DAA1E /* MarcorableDesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MarcorableDesignSystem; path = ../MarcorableDesignSystem; sourceTree = "<group>"; };
+		A9BAD8962A774F82002C8A55 /* PresentableExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentableExampleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9BAD8952A774845002C8A55 /* MarcorableDesignSystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +40,10 @@
 		A933E6C22A769AA2006DAA1E = {
 			isa = PBXGroup;
 			children = (
+				A933E6DC2A769AEB006DAA1E /* Packages */,
 				A933E6CD2A769AA2006DAA1E /* Example */,
 				A933E6CC2A769AA2006DAA1E /* Products */,
+				A9BAD8932A774845002C8A55 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +60,7 @@
 			children = (
 				A933E6CE2A769AA2006DAA1E /* ExampleApp.swift */,
 				A933E6D02A769AA2006DAA1E /* ContentView.swift */,
+				A9BAD8962A774F82002C8A55 /* PresentableExampleView.swift */,
 				A933E6D22A769AA3006DAA1E /* Assets.xcassets */,
 				A933E6D42A769AA3006DAA1E /* Preview Content */,
 			);
@@ -65,6 +73,21 @@
 				A933E6D52A769AA3006DAA1E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A933E6DC2A769AEB006DAA1E /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				A933E6DD2A769AEB006DAA1E /* MarcorableDesignSystem */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		A9BAD8932A774845002C8A55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +106,9 @@
 			dependencies = (
 			);
 			name = Example;
+			packageProductDependencies = (
+				A9BAD8942A774845002C8A55 /* MarcorableDesignSystem */,
+			);
 			productName = Example;
 			productReference = A933E6CB2A769AA2006DAA1E /* Example.app */;
 			productType = "com.apple.product-type.application";
@@ -139,6 +165,7 @@
 			files = (
 				A933E6D12A769AA2006DAA1E /* ContentView.swift in Sources */,
 				A933E6CF2A769AA2006DAA1E /* ExampleApp.swift in Sources */,
+				A9BAD8972A774F82002C8A55 /* PresentableExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +366,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A9BAD8942A774845002C8A55 /* MarcorableDesignSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MarcorableDesignSystem;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A933E6C32A769AA2006DAA1E /* Project object */;
 }

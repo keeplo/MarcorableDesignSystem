@@ -8,7 +8,7 @@
 import SwiftUI
 
 // MARK: - FullScreenCover
-protocol FullScreenCoverPresentable {
+public protocol FullScreenCoverPresentable {
     associatedtype FullScreenCoverItem
     
     var fullScreenCoverItem: FullScreenCoverItem? { get set }
@@ -17,7 +17,7 @@ protocol FullScreenCoverPresentable {
 
 extension FullScreenCoverPresentable where Self: AnyObject {
     
-    var isPresentedFullScreenCover: Binding<Bool> {
+    public var isPresentedFullScreenCover: Binding<Bool> {
         .init(
             get: { self.fullScreenCoverItem == nil ? false : true },
             set: { _ in
@@ -33,7 +33,7 @@ extension FullScreenCoverPresentable where Self: AnyObject {
 }
 
 // MARK: - Sheet
-protocol SheetPresentable {
+public protocol SheetPresentable {
     associatedtype SheetItem
     
     var sheetItem: SheetItem? { get set }
@@ -42,7 +42,7 @@ protocol SheetPresentable {
 
 extension SheetPresentable where Self: AnyObject {
     
-    var isPresentedSheet: Binding<Bool> {
+    public var isPresentedSheet: Binding<Bool> {
         .init(
             get: { self.sheetItem == nil ? false : true },
             set: { _ in
